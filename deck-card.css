@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.hero {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+.hero-contenu h1 {
+  font-size: 48px;
+  color: #0f0737;
+  text-shadow: 0 0 15px rgba(0, 245, 256, 0.7);
+  margin-bottom: 20px;
+}
+.hero-contenu p {
+  font-size: 18px;
+  color: #0f0737;
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+}
+.cta-btn {
+  background: linear-gradient(90deg, #252540, #10021c);
+  color: #fff;
+  font-size: 18px;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.cta-btn:hover {
+  box-shadow: 0 0 25px #ff00ff;
+  transform: scale(1.1);
+}
+body {
+  background-image: url("images (8).jpeg");
+  font-family: "Roboto", verdana, sans-serif;
+  display: flex;
+  justify-content: space-around;
+  align-items: column;
+  min-height: 100vh;
+}
+.contenu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  padding: 20px;
+}
+.jeux {
+  background-color: #9a9ab9;
+  padding: 15px;
+  border-radius: 15px;
+  border: 2px solid #787272;
+  text-align: center;
+}
+.jeux img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.jeux-img {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.prix {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #13073a;
+}
+footer {
+  background-color: #1a1a2e;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+button {
+  background-image: linear-gradient(90deg, #252540, #10021c);
+  background-color: #030324;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 800;
+}

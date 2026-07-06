@@ -1,0 +1,145 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #0a0a1a;
+  color: #e0e0e0;
+  min-height: 100vh;
+}
+
+/* 1. STRUCTURE HOLY GRAIL AVEC GRID */
+body {
+  background-image: url("images (3).jpeg ");
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-template-rows: auto 1fr auto;
+  gap: 20px;
+  padding: 20px;
+}
+
+header {
+  grid-area: header;
+}
+main {
+  grid-area: main;
+}
+footer {
+  grid-area: footer;
+}
+
+/* 2. HEADER */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, #252540, #10021c);
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.logo a {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-decoration: none;
+  background-image: url("images (2).jpeg  ");
+  background-size: cover;
+}
+
+/* 3. MAIN = 3 COLONNES : NAV | JEUX | ASIDE */
+main {
+  display: grid;
+  grid-template-areas: "nav vos-jeux aside";
+  grid-template-columns: 200px 1fr 280px;
+  gap: 20px;
+}
+
+.nav-bar {
+  grid-area: nav;
+}
+.vos-jeux {
+  grid-area: vos-jeux;
+}
+aside {
+  grid-area: aside;
+}
+
+/* 4. NAV-BAR */
+.nav-bar {
+  position: sticky;
+  top: 0;
+  background-color: #1a1a2e;
+  padding: 20px;
+  border-radius: 15px;
+  height: fit-content;
+}
+
+.nav-bar ul {
+  list-style: none;
+}
+
+.nav-bar li {
+  margin-bottom: 15px;
+}
+
+.nav-bar a {
+  color: #aaa;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.nav-bar a:hover,
+.nav-bar .first-link a {
+  color: #00d4ff;
+}
+
+/* 5. SECTION JEUX */
+.vos-jeux {
+  background-color: #1a1a2e;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.greetings h1 {
+  color: #00d4ff;
+  margin-bottom: 20px;
+}
+
+/* Grille de cartes de jeux */
+.vos-jeux {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.jeux-item {
+  background-color: #252540;
+  padding: 15px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: transform 0.2s;
+}
+.jeux-item:hover {
+  transform: translateY(-3px);
+}
+
+.jeux-img {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.jeux-img img {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+}
